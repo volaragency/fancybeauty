@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Redirect .html URLs to Clean URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ $1 [L,R=301]
+
+# Internally Rewrite Clean URLs to .html Files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.html [L]
+
+ErrorDocument 404 /index.html
+ErrorDocument 403 /index.html
