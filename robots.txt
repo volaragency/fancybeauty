@@ -1,0 +1,13 @@
+User-agent: *
+Crawl-delay: 10
+Disallow:
+
+User-agent: Googlebot
+Crawl-delay: 
+Disallow:
+
+User-agent: Bingbot
+Crawl-delay: 
+Disallow:
+
+Sitemap: https://localpack.fancybeaute.com/sitemap.xml
